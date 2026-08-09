@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+ #menu-toggle{
+    display: none;
+    background: none;
+    border:none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+ }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Arial, Sans-serif;
     line-height: 1.6;
@@ -41,7 +52,6 @@ div#me img{
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 #aboutme span{
     color: yellow;
@@ -127,4 +137,23 @@ section{
     padding: 3rem 2rem;
 }
 
+@media (max-width: 768px){
+ #menu-toggle{
+    display: block;
+    color: #fbf9f9;
+ }
+ nav.links ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:60px;
+    right: 2rem;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+ }
+ nav.links ul.open{
+    display: flex;
+ }
+}
 
