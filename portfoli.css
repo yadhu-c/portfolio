@@ -102,14 +102,29 @@ form{
     max-width: 500px;
     background-color: #fbf9f9;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px 50px;
     gap: 1rem;
+    color: #333;
 }
 input, textarea {
     width: 100%;
     padding: 0.7rem;
     background-color: #fff9f9;
-    border: 1px solid #444;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    color: white;
+    color:  #333;
 }
+button[type="submit"]{
+    background-color: black;
+    color: white;
+    border:none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section{
+    padding: 3rem 2rem;
+}
+
+
